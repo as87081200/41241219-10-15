@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>翻卡牌遊戲</title>
+</head>
+<body>
+    <div class="container">
+        <h1>翻卡牌遊戲</h1>
+        <label for="gridSize">選擇格子大小：</label>
+        <select id="gridSize">
+            <option value="2">2 x 2</option>
+            <option value="4" selected>4 x 4</option>
+            <option value="6">6 x 6</option>
+        </select>
+        <div class="button-container">
+            <button id="startBtn">開始遊戲</button>
+            <button id="restartBtn" class="hidden">再玩一次</button>
+            <button id="themeBtn">切換主題</button>
+        </div>
+        <span id="themeLabel">主題：卡通</span>
+        <div id="timer">時間：0秒</div>
+        <input type="checkbox" id="showMatchedCards">顯示配對圖片
+        <div id="gameBoard" class="game-board grid-4"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
